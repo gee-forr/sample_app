@@ -32,5 +32,11 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'webrat'
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'guard-rspec'
+  gem 'growl'
+  gem 'ruby_gntp'
+  gem 'spork'
+  gem 'guard-spork'
 end
 
