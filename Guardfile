@@ -27,4 +27,14 @@ guard 'rspec', :version => 2, :cli => '--drb' do
   watch(%r{^app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/requests/#{m[1]}_spec.rb" }
 end
 
-
+guard 'pow' do
+  watch('.powrc')
+  watch('.powenv')
+  watch('.rvmrc')
+  watch('Gemfile')
+  watch('Gemfile.lock')
+  watch('config/application.rb')
+  watch('config/environment.rb')
+  watch(%r{^config/environments/.*\.rb$})
+  watch(%r{^config/initializers/.*\.rb$})
+end

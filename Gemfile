@@ -27,6 +27,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'rspec-rails'
+  gem 'guard-pow'
 end
 
 group :test do
