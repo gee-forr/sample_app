@@ -49,7 +49,5 @@ describe PagesController do
       get 'help'
       response.should have_selector('title', content: "Ruby on Rails Tutorial Sample App | Help")
     end
-
   end
-
 end
