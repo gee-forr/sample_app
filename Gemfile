@@ -28,6 +28,7 @@ gem 'jquery-rails'
 group :development do
   gem 'rspec-rails'
   gem 'guard-pow'
+  gem 'pry-rails'
 end
 
 group :test do
