@@ -29,6 +29,7 @@ group :development do
   gem 'rspec-rails'
   gem 'guard-pow'
   gem 'pry-rails'
+  gem 'annotate'
 end
 
 group :test do
