@@ -54,4 +54,12 @@ describe User do
     user_with_duplicate_address = User.new(@attr)
     user_with_duplicate_address.should_not be_valid
   end
+
+  it "should reject duplicate email addresses regardless of case" do
+    User.create!(@attr)
+
+    @attr[:email].upcase!
+    user_with_duplicate_address = User.new(@attr)
+    user_with_duplicate_address.should_not be_valid
+  end
 end
